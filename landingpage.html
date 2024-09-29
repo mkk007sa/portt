@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mkk007sa</title>
+    <link rel="icon" href="2033.jpg" type="image/png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">KATLEGO MANYAMA</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm KATLEGO 👋</h1>
+            <p>Full stack web Developer based in Johannesburg, and I'm very passionate and dedicated to my work.</p>
+            <div class="social-links">
+                <a href="https://wa.me/+27797999519"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/katlego-manyama-304abb290?utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                <a href="http://www.facebook.com/realmkkza"><i class="fab fa-facebook"></i></a>
+            </div>
+            <br>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Contact Info</a>
+                <a href="#" class="btn">Download CV <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="2033.jpg" alt="[Your Name]">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Growing up with a passion for computers, I've always been fascinated by how technology shapes the world. Becoming a developer has been a lifelong dream, and I am driven by the excitement of solving complex problems through code. I thrive on challenges, continuously pushing myself to learn and grow in the field. With a solid foundation in various web technologies, I'm eager to embark on my journey as a junior developer.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="circle" data-percentage="90">
+                    <span>HTML</span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="circle" data-percentage="85">
+                    <span>CSS</span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="circle" data-percentage="80">
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="circle" data-percentage="50">
+                    <span>React</span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="circle" data-percentage="50">
+                    <span>Python</span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="circle" data-percentage="50">
+                    <span>APIs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Check out my projects on <a href="#" target="_blank">GitHub</a>.</p>
+        <ul>
+            <li><a href="https://mkk007sa.github.io/calcccc/">Calculator</a></li>
+            <li><a href="https://mkk007sa.github.io/music/">Video App</a></li>
+            <li><a href="https://mkk007sa.github.io/todoAPP/">Todo App</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p><a href="mailto:mkk007sa@gmail.com?subject=Hello%20there&body=I%20would%20like%20to%20contact%20you"> Email: mkk007sa@gmail.com</a></p>
+        <p><a href="tel:+27797999519">Phone: +27 79 7999 519</a></p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/katlego-manyama-304abb290?utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-email"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 KATLEGO. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Add smooth scroll behavior
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Sticky Navigation
+        window.onscroll = function() { stickyNav() };
+
+        var navbar = document.querySelector("nav");
+        var sticky = navbar.offsetTop;
+
+        function stickyNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
